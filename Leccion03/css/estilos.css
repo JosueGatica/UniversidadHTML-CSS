@@ -1,0 +1,29 @@
+h1{
+    color:#560bad;
+}
+
+/*Simulacion boton*/
+a:link,a:visited{
+    background-color: #b5179e;
+    color:white;
+    padding: 15px 25px;
+    text-align: none;
+    text-decoration: none;
+    display: inline-block;
+}
+
+/*Ya visitado
+a:visited{
+    color: #219ebc;
+}*/
+
+/*
+/*Paso por arriba*/
+a:hover,a:active{
+    background-color: #560bad;
+}
+
+/*Clickeo
+a:active{
+    color: #023047;
+}*/

@@ -1,0 +1,16 @@
+/*Hoja de estilo*/
+h2{
+    color: green;
+    padding: 15px;
+    border: 15px solid blue;
+    /*margin-top: 50px;
+    margin-left: 100px;*/
+    /* Completo: margin: 40px 10px 20px 40px;*/
+    /*Arriba left-right abajomargin: 40px 10px 20px;*/
+    margin: 40px 10px;/*Arriba-abajo left-right*/
+    text-align: center; 
+}
+
+P{
+    background-color: aqua ;
+}
