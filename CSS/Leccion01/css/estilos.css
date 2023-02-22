@@ -1,0 +1,34 @@
+/*External CSS*/
+
+*{ /*Selector Universal*/
+    background-color: gold;
+    color: blueviolet;
+}
+/*
+h1{
+    color: aqua;/*!important; Importante le da prioridad
+    text-align: left;
+}
+
+#titulo{
+    color: crimson;
+    text-align: center;
+}
+
+.centrar{
+    text-align: center;
+}
+
+.texto_grande{
+    font-size: 20px;
+}*/
+
+h1 ,h2 , p, div{ /*Se aplican a los 3 juntos*/
+    color: crimson;
+    text-align: center;
+}
+
+p.centrar{ /*Solo los que tienen centrar*/
+    color: blue;
+    text-align: center;
+}
