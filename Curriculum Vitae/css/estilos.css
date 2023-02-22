@@ -1,0 +1,58 @@
+.entrada {
+    text-align: center;
+}
+
+#foto_josu {
+    width: 200px;
+    height: 200px;
+    border-radius: 50%;
+    overflow: hidden;
+    margin-top: 20px;
+ }
+
+.entrada .logos .logo{
+    width: 50px;
+    height: 50px;
+}
+
+.introduccion #introduccion_titulo{
+    color: #88CCF1;
+}
+
+.experiencia_laboral #alarmas{
+    list-style-type: none;
+    padding-left: 0;
+}
+  
+.experiencia_laboral #alarmas::before {
+    content: "2022 - Actualidad";
+    margin-right: 5px;
+    padding-right: 50px;
+}
+
+.experiencia_laboral .exp_contenido{
+    list-style-position: inside;
+}
+
+.experiencia_laboral #cv{
+    list-style-type: none;
+    padding-left: 0;
+}
+  
+.experiencia_laboral #cv::before {
+    content: "Actualidad";
+    margin-right: 5px;
+    padding-right: 50px;
+}
+
+.experiencia_laboral #cn{
+    list-style-type: none;
+    padding-left: 0;
+}
+  
+.experiencia_laboral #cn::before {
+    content: "2021";
+    margin-right: 5px;
+    padding-right: 50px;
+}
+
