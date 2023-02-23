@@ -1,0 +1,41 @@
+h1{
+    text-align: center;
+    color: #e63946;
+}
+
+*{
+    margin: 0;
+    padding: 0;
+}
+
+.mc1{
+    padding: 10px 15px 5px 3px; 
+    border: 1px solid #457d9d;
+    background-color: #f1faee;
+    margin-left: 100px;
+    /*margin: 0 auto; Centra automatico*/
+    /*width: 300px;*/ 
+    max-width: 100px; /*Saco la barra de scroll*/ /*100% del ancho disponible*/
+    max-height: 100%;
+    /*outline: 10px solid #a8dadc; /*Entre border y margin
+    outline-offset: 10px; /*Separacion del outline*/
+    box-sizing: border-box; /*El contenido se mantiene en 300 pixeles, por el width*/
+}
+
+div{
+    padding: 10px 15px 5px 3px; 
+    border: 1px solid #457d9d;
+    background-color: #f1faee;
+    margin: 20px;
+    /*margin: 0 auto; Centra automatico*/
+    /*width: 300px;*/ 
+    max-width: 100px; /*Saco la barra de scroll*/ /*100% del ancho disponible*/
+    max-height: 100%;
+    /*outline: 10px solid #a8dadc; /*Entre border y margin
+    outline-offset: 10px; /*Separacion del outline*/
+    box-sizing: border-box; /*El contenido se mantiene en 300 pixeles, por el width*/
+}
+
+p.interno{
+    margin-left: inherit; /*Hereda las propiedades*/
+}
