@@ -1,0 +1,90 @@
+/*Importar fuentes de Google fonts (Version 2)
+@import url('https://fonts.googleapis.com/css2?family=Sofia&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Roboto&display=swap');
+Las dos juntas
+@import url('https://fonts.googleapis.com/css2?family=Roboto&family=Sofia&display=swap');*/
+
+/*Importar fuente en Google fonts version 1*/
+@import url('https://fonts.googleapis.com/css?family=Sofia|Roboto&effect=shadow-multipledisplay=swap');
+
+h1{
+    color: #ef476f;
+    text-align: center;
+    text-transform: uppercase;
+    text-shadow: 2px 2px 2px #ced4da;
+    font-family: 'Sofia', cursive;
+}
+
+.caja{
+    padding: 5px;
+    width: 40%;
+    height: 80px;
+    border-radius: 5px ;
+    color:white;
+    text-align: center;
+    margin: 10px ;
+    font-size: 20px;
+    float: left;
+}
+
+.caja.serif {
+    /*Serif (esquinas redondeadas)*/
+    background-color: #5a189a;
+}
+
+.caja.sans-serif {
+    /*Sans-Serif (esquinas no redondeadas)*/
+    background-color: #00b4d8;
+}
+
+.caja.monospace {
+    /*Sans-Serif (esquinas no redondeadas)*/
+    background-color: #f15bb5;
+}
+
+.caja.cursive {
+    /*Sans-Serif (esquinas no redondeadas)*/
+    background-color: #ff8500;
+}
+
+.fuente_times{
+    font-family: 'Roboto', sans-serif;
+    /*font-family: 'Times New Roman', Times, serif; /*Fuente1, FuenteSuplenete, FUenteGlobal (mas generica)*/
+    font-style: normal; /*Estilo*/
+    font-weight: normal; /*Tamaño fuente*/
+    font-variant: small-caps; /*Variantes*/
+    font-size: 20px; /*Tamaño texto*/
+    /*
+    Simplificado con font
+    font: font-style font-variant font-weight °font-size/line-heigth °font-famili
+    font: italic small-caps bolder 20px Roboto, sans-serif;*/
+}
+
+.fuente_georgia{
+    font-family: Georgia, 'Times New Roman', Times, serif;
+    font-style: italic;
+    font-weight: bold;
+    font-variant: normal;
+    font-size: 1em; /* 16px/16 = 1 em*/
+}
+
+.fuente_arial{
+    font-family: Arial, Helvetica, sans-serif;
+    font-style: oblique;
+    font-weight: bolder;
+    font-size: 3vw; /*view -> w: ancho , h : alto*/
+    /*1vw -> 1%*/
+}
+
+.fuente_verdana{
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+    font-weight: 900;
+}
+
+.fuente_courier{ /*Maquina de escribir*/
+    font-family: 'Courier New', Courier, monospace;
+}
+
+.fuente_lucida{ /*Cursiva*/
+    font-family: 'Lucida Handwriting', cursive;
+}

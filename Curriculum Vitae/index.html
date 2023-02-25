@@ -3,24 +3,26 @@
 <head>
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta Nombre="viewport" content="width=device-width, initial-scale=1.0">
     <title>CV - Josue Gatica Odato</title>
     <link rel="stylesheet" href="css/estilos.css">
 
 </head>
 <body>
     <!--Parte principal del CV-->
-    <div class="entrada">
-
-        <img id="foto_josu" src="images/MiFoto.jpg" 
+    <div class="principio">
+        <!--Foto, nombre y datos-->
+        <div id="presentacion">
+            <img id="foto_josu" src="images/josu.png" 
         alt="Foto principal">
-        <h1>Josue Leonel Gatica Odato</h1>
-        <h2>Estudiante Lic. en Sistemas de Informacion</h2>
-
-            <!--Redes-->
+            <h1>Josue Leonel Gatica Odato</h1>
+            <h2>Estudiante Lic. en Sistemas de Informacion</h2>
+        </div>
+        
+        <!--Redes-->
         <div class="container">
             <div class="social-buttons">        
-            <!-- instagram Button -->
+                <!-- Instagram -->
                 <a href="https://www.instagram.com/leonelodato2/" target="blank" class="social-margin">
                     <div class="social-icon instagram">
                         <img class="logofa" src="images/instagram-logo.png" 
@@ -28,10 +30,10 @@
                     <i class="fa fa-instagram" aria-hidden="true"></i> 
                     </div>
                 </a>
-                <!-- Facebook Button -->
+                <!-- Facebook-->
                 <a href="https://www.facebook.com/leonel.odato.7" class="social-margin" target="blank">
                     <div class="social-icon facebook">
-                    <img class="logoface" src="images/Facebook_f_logo_(2019).svg.png"
+                    <img class="logoface" src="images/Facebook_f_logo_(2019).svg.png">
                     <i class="fa fa-facebook" aria-hidden="true"></i>
                     </div> 
                 </a>
@@ -44,14 +46,29 @@
                     </div>
                 </a>
             </div>
+
         </div>
+
+        <!--Fondo animado-->
+        <div class="waveWrapper waveAnimation">
+            <div class="waveWrapperInner bgTop">
+              <div class="wave waveTop" style="background-image: url('http://front-end-noobs.com/jecko/img/wave-top.png')"></div>
+            </div>
+            <div class="waveWrapperInner bgMiddle">
+              <div class="wave waveMiddle" style="background-image: url('http://front-end-noobs.com/jecko/img/wave-mid.png')"></div>
+            </div>
+            <div class="waveWrapperInner bgBottom">
+              <div class="wave waveBottom" style="background-image: url('http://front-end-noobs.com/jecko/img/wave-bot.png')"></div>
+            </div>
+        </div>
+
+        
+
+        
+
     </div>    
 
-    <!--
-    <h2>
-        <a href="mailto:josuegaticaodato@gmail.com?subject=Contacto&body=Prueba"> josuegaticaodato@gmail.com</a>
-         • Chivilcoy, Buenos Aires </h2>-->
-
+    <!--Introduccion-->
     <div class="introduccion">
         <h2 id="introduccion_titulo"> Introduccion </h2>
         <p id="introduccion_texto"> Naci el 20 de febrero del 2002 (21 años actualmente).
@@ -63,6 +80,7 @@
             responsable. Siempre tengo la mejor disposicion para la realizacion de mis labores. </p>
     </div>
 
+    <!--Habilidades-->
     <div class="habilidades">
         <h2 id="habilidades_titulo"> Habilidades </h2>
         <ul id="lista_habilidades">
@@ -74,7 +92,7 @@
         </ul>
     </div>
 
-    
+    <!--Educacion-->
     <div class="educacion">
         <h2 id="educacion_titulo"> Educacion </h2>
         <ul id="lista_educacion">
@@ -96,6 +114,7 @@
         </ul>
     </div>
 
+    <!--Experiencia Laboral-->
     <div class="experiencia_laboral">
         <h2 id="experiencia_laboral_titulo"> Experiencia Laboral </h2>
         <ul class="lista_experiencia_laboral">
@@ -108,7 +127,7 @@
         </ul>
 
         <ul class="lista_experiencia_laboral">
-            <li id="cv"> Community Manager (CV) en las paginas de Futbol "Eventos Deportivos" (desde 2022) y "IF Chivilcoy" (desde 2019)
+            <li id="cv"> Community Manager (CV) en las paginas de Futbol "Eventos Deportivos"y "IF Chivilcoy"
                 <ul class="exp_contenido">
                     <li>Gestion, mantenimiento y adminitracion del contenido de la pagina.</li>
                     <li>Creacion de diseños, ya sea fotos o videos.</li>
@@ -126,10 +145,62 @@
 
     </div>
     
+    <!--Disponibilidad-->
     <div class="disponibilidad">
         <h2 id="disponibilidad_titulo"> Disponibilidad Horaria </h2>
         <p id="disponibilidad_texto"> Actualmente cursando el tercer año de la carrera universitaria. </p>
     </div>
+
+
+    <!--Contacto-->
+    <section id="contact">
+  
+        <h1 class="section-header">Contacto</h1>
+        
+        <div class="contact-wrapper">
+
+          <!--Parte izquierda: Nombre, Email y Mensaje-->
+          <form id="contact-form" class="form-horizontal" role="form">
+             
+            <div class="form-group">
+              <div class="col-sm-12">
+                <input type="text" class="form-control" id="Nombre" placeholder="Nombre" Nombre="Nombre" value="" required>
+              </div>
+            </div>
+      
+            <div class="form-group">
+              <div class="col-sm-12">
+                <input type="email" class="form-control" id="email" placeholder="Email" Nombre="email" value="" required>
+              </div>
+            </div>
+      
+            <textarea class="form-control" rows="10" placeholder="Mensaje" id="Mensaje" Nombre="Mensaje" required></textarea>
+            
+            <button class="btn btn-primary send-button" id="submit" type="submit" value="ENVIAR">
+              <div class="alt-send-button">
+                <i class="fa fa-paper-plane"></i><span class="send-text">ENVIAR</span>
+              </div>
+            </button>
+            
+          </form>
+          
+            <!--Parte derecha: Telefono y ubicacion Josue--> 
+          
+            <div class="direct-contact-container">
+      
+              <ul class="contact-list">
+                <li class="list-item"><i class="fa fa-map-marker fa-2x"><span class="contact-text place">Chivilcoy,Buenos Aires</span></i></li>
+                
+                <li class="list-item"><i class="fa fa-phone fa-2x"><span class="contact-text phone">(2346) 609986</span></i></li>
+                
+                <li class="list-item"><i class="fa fa-envelope fa-2x"><span class="contact-text gmail"><a href="mailto:josuegaticaodato@gmail.com?subject=Contacto&body=Prueba" title="Enviar mail">josuegaticaodato@gmail.com</a></span></i></li>
+                
+              </ul>
+            </div>
+          
+        </div>
+        
+      </section>  
 
 </body>
 </html>
