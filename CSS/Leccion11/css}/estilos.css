@@ -1,0 +1,101 @@
+h1{
+    text-align: center;
+    color: #e63946;
+}
+
+div.contenedor{
+    width: 80%;
+    height: 20%;
+    margin: auto;
+    border: 3px solid #a8dadc;
+    padding: 15px;
+    color: #457b45;
+}
+
+div.contenedor.descendiente p{ /*No importa el nivel*/
+    background-color: #fdffb6;
+}
+
+div.contenedor.hijo > p{ /*Solo hijos directos*/
+    background-color: #ffc6ff;
+}
+
+div.contenedor.adyacente + p{ /*Selecciona despues del div, solo el que sigue*/
+    background-color: #caffbf;
+}
+
+div.contenedor.hermano ~ p{ /*Selecciona todo lo que esta al mismo nivel del div*/
+    background-color: #9bf6ff;
+}
+
+/*Selectores:
+Descendiente: En cualquier nivel interno, no importa si tiene otro elemento
+Hijo: Solo los que son hijos directos, no los que se encuentran dentro de otro elemento
+Adyacente: Despues del elemento, solamente 1.
+Hermano: Todo lo que este en el mismo nivel
+*/
+
+/*PSEUDO CLASES
+Hover: Pasar por encima
+first-child: Primer elemento
+*/ 
+
+div.contenedor2{
+    width: 30%;
+    height: 20%;
+    margin: auto;
+    border: 3px solid #a8dadc;
+    padding: 15px;
+    color: #457b45;
+    text-align: center;
+}
+
+div.contenedor2:hover{
+    background-color: #457b9d;
+    color: #f1faee;
+}
+
+div.contenedor2.oculto p{
+    display: none;
+}
+
+div.contenedor2.oculto:hover p{
+    display: block;
+    background-color: #a8dadc;
+    color: #023e8a;
+    padding: 15px;
+}
+
+div.contenedor.primero p:first-child{
+    font-variant: small-caps;
+}
+
+/*PSEUDO ELEMENTOS
+Seleccion: Seleccion sobre el texto
+first-line: Primer linea
+first-letter: primer letra
+before: antes
+after: despues
+*/ 
+
+div.contenedor2 p::selection{
+    background-color: yellow;
+    color: red;
+}
+
+div.contenedor2 p::first-line{
+    font-variant: small-caps;
+    color: red;
+}
+
+div.contenedor2 p::first-letter{
+    font-size: 1.5em;
+}
+
+div.contenedor2 p::before{
+    content: "- ";
+}
+
+div.contenedor2 p::after{
+    content: " -";
+}

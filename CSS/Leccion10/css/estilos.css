@@ -1,0 +1,102 @@
+h1,h2{
+    text-align: center;
+    color: crimson;
+}
+div.relativo{
+    MAX-width: 300px;
+    height: 200px;
+    position: relative; /*NO PUEDE SER STATIC POR EL ABSOLUTE*/
+    top: 10px;
+    left: 100px;
+    border: 3px solid cornflowerblue;
+}
+div.absoluto{
+    /*width: 50%; /*Se ajusta a la pantalla cuando usamos % en vez de px*/
+    border: 3px solid firebrick;
+    /*margin: auto; /*Centrar div*/
+    position: absolute;
+    bottom: 20px;
+    right: 10px;
+}
+
+div.sticky{
+    position: sticky;
+    border: 3px solid firebrick;
+    top: 0;
+}
+
+div.estatico{
+    position: static;
+    top: 10px;
+    padding: 15px;
+    border: 3px solid greenyellow;
+    background-color: whitesmoke;
+}
+
+div.relativo2{
+    position: relative;
+    top:-20px;
+    left: 10px;
+    padding: 15px;
+    border: 3px solid blueviolet;
+    background-color: whitesmoke;
+}
+
+div.absoluto2{
+    position: absolute;
+    bottom:0;
+    right: 0;
+    padding: 112px;
+    border: 3px solid cornflowerblue;
+    background-color: whitesmoke;  
+    z-index: -1; 
+}
+
+div.contenedor{
+    border: 3px dashed greenyellow;
+    width: 30%;
+    height: 50px;
+    overflow: auto;
+}
+
+div.contenedor2{
+    width: 30%;
+    height: 100px;
+    overflow: auto;
+}
+
+div.contenedor2.flotado{
+    float: left;
+}
+
+div.contenedor2.flotado.c1{
+    border: 3px dashed greenyellow;
+}
+
+div.contenedor2.flotado.c2{
+    border: 3px dashed cornflowerblue;
+    float: right;
+}
+
+
+div.contenedor2.c3{
+    clear: both; /*Limpia los elementos float*/
+    border: 3px dashed darkorange;
+    margin: auto;
+}
+
+/*Tipos de posicionamiento:
+.Static: Por default (top, left, right, button no se afectan)
+.Relative: Se mueve segun top, left, right, buttom
+.Fixed: Se ajusta a la pantalla maxima (ej esquina top,left: 0px)
+.Absolute: Existen elementos padres y hijo, queda fijo no como el fixed
+.Sticky: Funciona de manera relativa y fija:fixed(fuera de pantalla)
+
+z-index: Superposicion de elementos (0 a n, mas chico se oculta de mas grande)
+
+
+Tipos de Overflow( puede aplicarse a x, y o ambos:
+.Visible (default): Se muestra todo lo de afuera
+.Hidden: Se oculta lo que qeuda afuera
+.Scrool: Crea un scroll para mostrar el contenido (ambas barras)
+.Auto: Muestra la barra de scroll necesario (ej solo horizontal)*/

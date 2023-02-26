@@ -1,0 +1,35 @@
+h1{
+    text-align: center;
+    text-shadow: 2px 2px 2px #a8dadc;
+    color: #e63046;
+}
+
+div.contenedor{
+    display: flex;
+    background-color: #560bad;
+    height: 300px;
+    /*flex-direction: row; /*Column - column-reverse - row - row-reverse
+    flex-wrap: wrap; 
+    /*Nowrap: no pasan - rap: Pasan sig linea*/
+    flex-flow: row wrap; /*Lo de arriba en 1 linea*/
+    justify-content:space-around; 
+    /*Flex-start - flex-end - space-around */
+    /*Carga izquierda, centro, derecha, etc.*/
+    align-items: flex-start;
+    /*Alinear horizontal
+    Flex-start: Arriba
+    Center: Medio
+    Flex-end: Abajo
+    Strecth: Se estira por todo el div
+    Baseline: Se alian a una linea imaginaria*/
+    align-content: space-around ;
+    /*Alinear vertical*/
+}
+
+div.contenedor > p{
+    background-color: #4895ef;
+    color: #f1faee;
+    margin: 20px;
+    padding: 15px;
+    font-size: 1.5em;
+}

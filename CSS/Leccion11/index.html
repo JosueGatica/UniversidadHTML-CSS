@@ -1,0 +1,74 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Selectores combinados en CSS</title>
+    <link rel="stylesheet" href="css}/estilos.css">
+</head>
+<body>
+    <h1>Selectores combinados en CSS</h1>
+    <div class="contenedor descendiente">
+        Selectores descendientes (en cualquier nivel interno):
+         <!--Hijos-->
+        <p>Primer renglon</p>
+        <p>Segundo renglon</p>
+        <section> <!--Descendiente-->
+            <p>Tercer renglon</p>
+        </section>
+    </div>
+
+    <div class="contenedor hijo">
+        Selectores hijo (child):
+         <!--Hijos-->
+        <p>Primer renglon</p>
+        <p>Segundo renglon</p>
+        <section> <!--Descendiente-->
+            <p>Tercer renglon</p>
+        </section>
+        <div>
+            <p>Cuarto renglon</p>
+        </div>
+        <p>Quinto renglon</p>
+    </div>
+
+    <div class="contenedor adyacente">
+        Selectores adyacente:
+         <!--Hijos-->
+        <p>Primer renglon</p>
+    </div>
+    <p>Segundo renglon</p>
+    <p>Tercer renglon</p>
+
+    <div class="contenedor hermano">
+        Selectores hermano:
+         <!--Hijos-->
+        <p>Primer renglon</p>
+    </div>
+    <p>Segundo renglon</p>
+    <p>Tercer renglon</p>
+
+
+    <!--Pseudo clases-->
+    <h1>Pseudo clases en CSS</h1>
+    <div class="contenedor2 oculto">
+        Pasa por encima
+        <p>Se muestra el parrafo</p>
+    </div>
+
+    <div class="contenedor2 primerp">
+        <p>Primer parrafo</p>
+        <p>Segundo parrafo</p>
+    </div>
+
+    <!--Pseudo elementos-->
+    <h1>Pseudo elementos en CSS</h1>
+    <div class="contenedor2">
+        <p>Selecciona el texto</p>
+        <p>Cillum in laborum elit voluptate nostrud eiusmod esse irure officia dolor. Consequat cupidatat deserunt ea proident eiusmod incididunt dolor quis minim occaecat ad et commodo. Amet duis velit labore veniam aliqua exercitation laboris.
+
+Labore pariatur deserunt eu incididunt ea esse sit adipisicing et. Minim amet duis consectetur veniam do pariatur eu consequat et aliqua duis. Labore dolore ea ea est. Sit ad commodo anim est amet officia est dolore do consectetur ipsum esse elit. Veniam minim esse enim velit deserunt laboris esse eu culpa non magna laboris sint.</p>
+    </div>
+</body>
+</html>
