@@ -1,19 +1,30 @@
 <!DOCTYPE html>
-<html lang="en">
+<html lang="es">
 <head>
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta Nombre="viewport" content="width=device-width, initial-scale=1.0">
     <title>CV - Josue Gatica Odato</title>
     <link rel="stylesheet" href="css/estilos.css">
-
 </head>
 <body>
+    <!--Menu-->
+    <div class="menu">
+        <a href="#introduccion" onclick="document.querySelector('#introduccion').scrollIntoView(); return false;">Introduccion</a>
+        <a href="#habilidades" onclick="document.querySelector('#habilidades').scrollIntoView(); return false;">Habilidades</a>
+        <a href="#educacion" onclick="document.querySelector('#educacion').scrollIntoView(); return false;">Educacion</a>
+        <a href="#experiencia_laboral" onclick="document.querySelector('#experiencia_laboral').scrollIntoView(); return false;">Experiencial Laboral</a>
+        <a href="#disponibilidad" onclick="document.querySelector('#disponibilidad').scrollIntoView(); return false;">Disponibilidad Horaria</a>
+        <a href="#contact" onclick="document.querySelector('#contact').scrollIntoView(); return false;">Contacto</a>
+        </ul>
+    </div>
+
+
     <!--Parte principal del CV-->
     <div class="principio">
         <!--Foto, nombre y datos-->
         <div id="presentacion">
-            <img id="foto_josu" src="images/josu.png" 
+            <img id="foto_josu" src="img/josu.png" 
         alt="Foto principal">
             <h1>Josue Leonel Gatica Odato</h1>
             <h2>Estudiante Lic. en Sistemas de Informacion</h2>
@@ -25,7 +36,7 @@
                 <!-- Instagram -->
                 <a href="https://www.instagram.com/leonelodato2/" target="blank" class="social-margin">
                     <div class="social-icon instagram">
-                        <img class="logofa" src="images/instagram-logo.png" 
+                        <img class="logofa" src="img/instagram-logo.png" 
                         alt="Instagram">
                     <i class="fa fa-instagram" aria-hidden="true"></i> 
                     </div>
@@ -33,14 +44,14 @@
                 <!-- Facebook-->
                 <a href="https://www.facebook.com/leonel.odato.7" class="social-margin" target="blank">
                     <div class="social-icon facebook">
-                    <img class="logoface" src="images/Facebook_f_logo_(2019).svg.png">
+                    <img class="logoface" src="img/Facebook_f_logo_(2019).svg.png">
                     <i class="fa fa-facebook" aria-hidden="true"></i>
                     </div> 
                 </a>
                 <!-- Github Button -->
                 <a href="https://github.com/JosueGatica"  target="blank"  class="social-margin">
                     <div class="social-icon github">
-                    <img class="logogit" src="images/github-logo.png" 
+                    <img class="logogit" src="img/github-logo.png" 
                     alt="Github">
                     <i class="fa fa-github-alt" aria-hidden="true"></i>
                     </div>
@@ -69,7 +80,7 @@
     </div>    
 
     <!--Introduccion-->
-    <div class="introduccion">
+    <div id="introduccion" class="introduccion">
         <h2 id="introduccion_titulo"> Introduccion </h2>
         <p id="introduccion_texto"> Naci el 20 de febrero del 2002 (21 años actualmente).
             Me recibi del secundario en el año 2019,
@@ -81,19 +92,77 @@
     </div>
 
     <!--Habilidades-->
-    <div class="habilidades">
+    <div id="habilidades" class="habilidades">
         <h2 id="habilidades_titulo"> Habilidades </h2>
-        <ul id="lista_habilidades">
-            <li>Manejo de programas de oficina (Word, Excel, PowerPoint)</li>
-            <li>Manejo avanzado de programas de diseño y edicion de videos</li>
-            <li>Ingles nivel medio</li>
-            <li>Manejo de redes sociales (Community Manager)</li>
-            <li>Lenguajes dominados: Python, Java, Pascal, Delphi</li>
-        </ul>
+
+        <div class="progresos">
+            <p>Programas de diseño</p>
+            <div class="progreso-barra-photoshop">
+                <div class="progreso-photoshop"></div>
+            </div>
+        </div>
+
+        <div class="progresos">
+            <p>Programas de edicion</p>
+            <div class="progreso-barra-edicion">
+                <div class="progreso-edicion"></div>
+            </div>
+        </div>
+
+        <div class="progresos">
+            <p>Paquete Office</p>
+            <div class="progreso-barra-office">
+                <div class="progreso-office"></div>
+            </div>
+        </div>
+
+        <div class="progresos">
+            <p>Community Manager</p>
+            <div class="progreso-barra-cm">
+                <div class="progreso-cm"></div>
+            </div>
+        </div>
+
+        <div class="progresos">
+            <p>Ingles</p>
+            <div class="progreso-barra-ingles">
+                <div class="progreso-ingles"></div>
+            </div>
+        </div>
+
+        <h3>Lenguajes de programacion</h3>
+
+        <div class="progresos">
+            <p>HTML/CSS/JavaScript</p><br></br>
+            <div class="progreso-barra-html">
+                <div class="progreso-html"></div>
+            </div>
+        </div>
+
+        <div class="progresos">
+            <p>Python</p><br></br>
+            <div class="progreso-barra-python">
+                <div class="progreso-python"></div>
+            </div>
+        </div>
+
+        <div class="progresos">
+            <p>Java</p><br></br>
+            <div class="progreso-barra-java">
+                <div class="progreso-java"></div>
+            </div>
+        </div>
+
+        <div class="progresos">
+            <p>Delphi/Pascal</p><br></br>
+            <div class="progreso-barra-pascal">
+                <div class="progreso-pascal"></div>
+            </div>
+        </div>
     </div>
 
     <!--Educacion-->
-    <div class="educacion">
+    <div id="educacion" class="educacion">
         <h2 id="educacion_titulo"> Educacion </h2>
         <ul id="lista_educacion">
             <li>Universidad Nacional de Lujan
@@ -115,7 +184,7 @@
     </div>
 
     <!--Experiencia Laboral-->
-    <div class="experiencia_laboral">
+    <div id="experiencia_laboral" class="experiencia_laboral">
         <h2 id="experiencia_laboral_titulo"> Experiencia Laboral </h2>
         <ul class="lista_experiencia_laboral">
             <li id="alarmas">Alarmas Chivilcoy 
@@ -127,10 +196,17 @@
         </ul>
 
         <ul class="lista_experiencia_laboral">
-            <li id="cv"> Community Manager (CV) en las paginas de Futbol "Eventos Deportivos"y "IF Chivilcoy"
+            <li id="cv"> Community Manager (CV) en las paginas de Futbol "Eventos Deportivos" (2022) y "IF Chivilcoy" (2019)
                 <ul class="exp_contenido">
-                    <li>Gestion, mantenimiento y adminitracion del contenido de la pagina.</li>
+                    <li>Gestion, mantenimiento y administracion del contenido de la pagina.</li>
                     <li>Creacion de diseños, ya sea fotos o videos.</li>
+                    <!--
+                    <li>Ejemplo de trabajos realizados:
+                        <ul class="trabajos">
+                            <li> <a id="if" href="ifChivilcoy.html">IF Chivilcoy</a></li>                           </li>
+                            <li><a id="ev" href="eventosDeportivos.html">Eventos Deportivos</a></li>
+                        </ul>
+                    </li>-->
                 </ul>
             </li>
         </ul>
@@ -146,7 +222,7 @@
     </div>
     
     <!--Disponibilidad-->
-    <div class="disponibilidad">
+    <div id="disponibilidad" class="disponibilidad">
         <h2 id="disponibilidad_titulo"> Disponibilidad Horaria </h2>
         <p id="disponibilidad_texto"> Actualmente cursando el tercer año de la carrera universitaria. </p>
     </div>
@@ -189,7 +265,7 @@
             <div class="direct-contact-container">
       
               <ul class="contact-list">
-                <li class="list-item"><i class="fa fa-map-marker fa-2x"><span class="contact-text place">Chivilcoy,Buenos Aires</span></i></li>
+                <li class="list-item"><i class="fa fa-map-marker fa-2x"><span class="contact-text place">Chivilcoy, Buenos Aires</span></i></li>
                 
                 <li class="list-item"><i class="fa fa-phone fa-2x"><span class="contact-text phone">(2346) 609986</span></i></li>
                 
@@ -200,7 +276,9 @@
           
         </div>
         
-      </section>  
-
+      </section>
+      
+      
+    <script src="js/cv.js"></script>
 </body>
 </html>

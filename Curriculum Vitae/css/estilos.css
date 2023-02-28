@@ -1,4 +1,22 @@
 /*-------------------------------------------------
+                    MENU
+---------------------------------------------------*/
+
+.menu{
+  background: linear-gradient(to bottom, rgba(26, 49, 95, 1) 0%, rgba(26, 49, 95, 0) 100%);
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.menu a{
+  font-size: 20px;
+  color: #fff;
+  padding: 30px 50px;
+}
+
+
+/*-------------------------------------------------
                     PRINCIPIO
 ---------------------------------------------------*/
 
@@ -171,6 +189,47 @@ a:active {
     color: #fff;
 }
 
+h3{
+  text-align: center;
+  color: #fff;
+  font-size: 40px;
+}
+
+.habilidades p{
+  text-align: center;
+  font-size: 30px;
+  color: #fff;
+  padding-right: 20px;
+}
+
+.progresos{
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.progreso-barra-html,.progreso-barra-photoshop, .progreso-barra-edicion
+,.progreso-barra-python,.progreso-barra-java,.progreso-barra-pascal,
+.progreso-barra-office,.progreso-barra-cm,.progreso-barra-ingles{
+  width: 70%;
+  height: 20px;
+  background-color: #ffffff;
+  border-radius: 10px;
+}
+
+.progreso-html,.progreso-photoshop, .progreso-edicion, .progreso-python,
+.progreso-java,.progreso-pascal, .progreso-office,.progreso-cm,.progreso-ingles{
+  height: 100%;
+  background-color: #ffb703;
+  border-radius: 10px;
+  width: 0%;
+  transition: width 0.3s ease-in-out;
+}
+
+.progreso-html,.progreso-python,.progreso-java,.progreso-pascal{
+  background-color: green;  
+}
+
 /*-------------------------------------------------
                     EDUCACION
 ---------------------------------------------------*/
@@ -224,7 +283,7 @@ a:active {
 }
 
 .experiencia_laboral #cv::before {
-  content: "2019 - Actualidad";
+  content: "Actualidad";
   margin-right: 5px;
   padding-right: 50px;
 }
